@@ -1,1 +1,7 @@
-const menuBtn=document.getElementById("menuBtn");const navLinks=document.getElementById("navLinks");menuBtn.addEventListener("click",()=>navLinks.classList.toggle("open"));document.querySelectorAll("#navLinks a").forEach(link=>link.addEventListener("click",()=>navLinks.classList.remove("open")));
+const darkBtn = document.getElementById("darkBtn");
+
+darkBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark");
+
+});
